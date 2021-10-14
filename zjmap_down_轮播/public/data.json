@@ -1,0 +1,386 @@
+{
+    "杭州市": {
+        "father": "浙江省",
+        "name": "杭州市",
+        "industry": [
+            {
+                "name": "卫生用品产业（卫生巾纸尿裤）",
+                "value": 71
+            },
+            {
+                "name": "食品相关产业（纸塑、塑料包装、厨房工具、清洁剂）",
+                "value": 570
+            },
+            {
+                "name": "分水制笔产业",
+                "value": 1266
+            },
+            {
+                "name": "学生服产业（床上用品）",
+                "value": 1651
+            },
+            {
+                "name": "电线电缆产业",
+                "value": 297
+            }
+        ],
+        "supervise": 692,
+        "unqualified": 31,
+        "unqualRate": "4.48%"
+    },
+    "余杭区": {
+        "father": "杭州市",
+        "name": "余杭区",
+        "industry": [
+            {
+                "name": "食品相关产业（纸塑、塑料包装、厨房工具、清洁剂）",
+                "value": 570
+            }
+        ],
+        "supervise": 151,
+        "unqualified": 4,
+        "unqualRate": "2.65%"
+    },
+    "桐庐县": {
+        "father": "杭州市",
+        "name": "桐庐县",
+        "industry": [
+            {
+                "name": "分水制笔产业",
+                "value": 1266
+            }
+        ],
+        "supervise": 51,
+        "unqualified": 0,
+        "unqualRate": "0.00%"
+    },
+    "萧山区": {
+        "father": "杭州市",
+        "name": "萧山区",
+        "industry": [
+            {
+                "name": "学生服产业（床上用品）",
+                "value": 1651
+            }
+        ],
+        "supervise": 156,
+        "unqualified": 9,
+        "unqualRate": "5.77%"
+    },
+    "临安区": {
+        "father": "杭州市",
+        "name": "临安区",
+        "industry": [
+            {
+                "name": "电线电缆产业",
+                "value": 297
+            }
+        ],
+        "supervise": 102,
+        "unqualified": 8,
+        "unqualRate": "7.84%"
+    },
+    "宁波市": {
+        "father": "浙江省",
+        "name": "宁波市",
+        "industry": [
+            {
+                "name": "涂料产业",
+                "value": 928
+            },
+            {
+                "name": "玩具婴童用品产业",
+                "value": 881
+            },
+            {
+                "name": "燃气灶具产业",
+                "value": 38
+            },
+            {
+                "name": "宁海文具产业",
+                "value": 92
+            }
+        ],
+        "supervise": 692,
+        "unqualified": 31,
+        "unqualRate": "4.48%"
+    },
+    "慈溪市": {
+        "father": "宁波市",
+        "name": "慈溪市",
+        "industry": [
+            {
+                "name": "玩具婴童用品产业",
+                "value": 881
+            }
+        ],
+        "supervise": 130,
+        "unqualified": 10,
+        "unqualRate": "7.69%"
+    },
+    "鄞州区": {
+        "father": "宁波市",
+        "name": "鄞州区",
+        "industry": [
+            {
+                "name": "燃气灶具产业",
+                "value": 38
+            }
+        ],
+        "supervise": 111,
+        "unqualified": 6,
+        "unqualRate": "5.41%"
+    },
+    "宁海县": {
+        "father": "宁波市",
+        "name": "宁海县",
+        "industry": [
+            {
+                "name": "宁海文具产业",
+                "value": 92
+            }
+        ],
+        "supervise": 21,
+        "unqualified": 2,
+        "unqualRate": "9.52%"
+    },
+    "温州市": {
+        "father": "浙江省",
+        "name": "温州市",
+        "industry": [
+            {
+                "name": "眼镜产业",
+                "value": 1289
+            },
+            {
+                "name": "制鞋产业",
+                "value": 1193
+            },
+            {
+                "name": "制笔行业",
+                "value": 49
+            },
+            {
+                "name": "智能锁产业",
+                "value": 13
+            },
+            {
+                "name": "小型断路器产业",
+                "value": 1206
+            },
+            {
+                "name": "针织内衣",
+                "value": 1003
+            },
+            {
+                "name": "箱包",
+                "value": 1075
+            },
+            {
+                "name": "徽章",
+                "value": 23
+            },
+            {
+                "name": "塑料编织袋",
+                "value": 91
+            },
+            {
+                "name": "棉纱",
+                "value": 200
+            },
+            {
+                "name": "拖把",
+                "value": 100
+            },
+            {
+                "name": "宠物玩具",
+                "value": 125
+            },
+            {
+                "name": "皮鞋",
+                "value": 46
+            },
+            {
+                "name": "沙滩鞋",
+                "value": 20
+            }
+        ],
+        "supervise": 692,
+        "unqualified": 31,
+        "unqualRate": "4.48%"
+    },
+    "鹿城区": {
+        "father": "温州市",
+        "name": "鹿城区",
+        "industry": [
+            {
+                "name": "制鞋产业",
+                "value": 1193
+            }
+        ],
+        "supervise": 26,
+        "unqualified": 2,
+        "unqualRate": "7.69%"
+    },
+    "龙湾区": {
+        "father": "温州市",
+        "name": "龙湾区",
+        "industry": [
+            {
+                "name": "制笔行业",
+                "value": 49
+            }
+        ],
+        "supervise": 55,
+        "unqualified": 2,
+        "unqualRate": "3.64%"
+    },
+    "瓯海区": {
+        "father": "温州市",
+        "name": "瓯海区",
+        "industry": [
+            {
+                "name": "智能锁产业",
+                "value": 13
+            }
+        ],
+        "supervise": 42,
+        "unqualified": 7,
+        "unqualRate": "16.67%"
+    },
+    "乐清市": {
+        "father": "温州市",
+        "name": "乐清市",
+        "industry": [
+            {
+                "name": "小型断路器产业",
+                "value": 1206
+            }
+        ],
+        "supervise": 305,
+        "unqualified": 16,
+        "unqualRate": "5.25%"
+    },
+    "苍南县": {
+        "father": "温州市",
+        "name": "苍南县",
+        "industry": [
+            {
+                "name": "针织内衣",
+                "value": 1003
+            },
+            {
+                "name": "箱包",
+                "value": 1075
+            },
+            {
+                "name": "徽章",
+                "value": 23
+            },
+            {
+                "name": "塑料编织袋",
+                "value": 91
+            },
+            {
+                "name": "棉纱",
+                "value": 200
+            },
+            {
+                "name": "拖把",
+                "value": 100
+            },
+            {
+                "name": "宠物玩具",
+                "value": 125
+            },
+            {
+                "name": "皮鞋",
+                "value": 46
+            },
+            {
+                "name": "沙滩鞋",
+                "value": 20
+            }
+        ],
+        "supervise": 38,
+        "unqualified": 2,
+        "unqualRate": "5.26%"
+    },
+    "湖州市": {
+        "father": "浙江省",
+        "name": "湖州市",
+        "industry": [
+            {
+                "name": "钢琴产业",
+                "value": 80
+            },
+            {
+                "name": "椅业",
+                "value": 551
+            },
+            {
+                "name": "木地板产业",
+                "value": 57
+            },
+            {
+                "name": "蓄电池产业",
+                "value": 136
+            }
+        ],
+        "supervise": 390,
+        "unqualified": 31,
+        "unqualRate": "7.95%"
+    },
+    "德清县": {
+        "father": "湖州市",
+        "name": "德清县",
+        "industry": [
+            {
+                "name": "钢琴产业",
+                "value": 80
+            }
+        ],
+        "supervise": 65,
+        "unqualified": 6,
+        "unqualRate": "9.23%"
+    },
+    "安吉县": {
+        "father": "湖州市",
+        "name": "安吉县",
+        "industry": [
+            {
+                "name": "椅业",
+                "value": 551
+            }
+        ],
+        "supervise": 52,
+        "unqualified": 4,
+        "unqualRate": "7.69%"
+    },
+    "南浔区": {
+        "father": "湖州市",
+        "name": "南浔区",
+        "industry": [
+            {
+                "name": "木地板产业",
+                "value": 57
+            }
+        ],
+        "supervise": 86,
+        "unqualified": 1,
+        "unqualRate": "1.16%"
+    },
+    "长兴县": {
+        "father": "湖州市",
+        "name": "长兴县",
+        "industry": [
+            {
+                "name": "蓄电池产业",
+                "value": 136
+            }
+        ],
+        "supervise": 59,
+        "unqualified": 2,
+        "unqualRate": "3.39%"
+    }
+}
