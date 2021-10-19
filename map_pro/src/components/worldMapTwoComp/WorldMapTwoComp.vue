@@ -1,8 +1,19 @@
 <template>
-  <v-chart id="world_map" class="map_chart" autoresize :option="option" ref="map" />
+  <button @click="handlerZH">中文</button>
+  <button @click="handlerEN">英文</button>
+  <v-chart
+    id="world_map"
+    class="map_chart"
+    autoresize
+    :option="option"
+    ref="map"
+    @click="handlerCountry"
+  />
 </template>
 
 <script>
+import axios from "axios";
+import lodash from "lodash";
 import { init, use, registerMap } from "echarts/core";
 import { CanvasRenderer } from "echarts/renderers";
 import {
@@ -13,7 +24,7 @@ import {
 } from "echarts/components";
 import { MapChart, ScatterChart } from "echarts/charts";
 import { onMounted, reactive, ref, toRefs, onBeforeUnmount, watch } from "vue";
-import world from "@/assets/mapJson/world_two.json";
+import world from "@/assets/mapJson/world.json";
 // 绘制地图
 registerMap("world", world);
 // 将刚才引入的MapChart用起来
@@ -30,47 +41,27 @@ use([
 export default {
   name: "WorldMapTwoComp",
   setup(props) {
+    const world_map_reac = reactive({
+      zhData: [],
+      enData: [],
+      geoNameMap: {},
+    });
     // 地图的 option 配置
     const option = ref({
-      backgroundColor: "rgba(0,21,60,1)",
       geo: {
         show: true,
         map: "world",
         roam: true,
         zoom: 1,
         center: [113.83531246, 34.0267395887],
-        emphasis: {
-          label: {
-            show: false,
-          },
+        label: {
+          show: true,
         },
-        itemStyle: {
-          borderColor: "rgba(147, 235, 248, 1)",
-          borderWidth: 1,
-          areaColor: {
-            type: "radial",
-            x: 0.5,
-            y: 0.5,
-            r: 0.8,
-            colorStops: [
-              {
-                offset: 0,
-                color: "rgba(147, 235, 248, 0)", // 0% 处的颜色
-              },
-              {
-                offset: 1,
-                color: "rgba(147, 235, 248, .2)", // 100% 处的颜色
-              },
-            ],
-            globalCoord: false, // 缺省为 false
-          },
-          shadowColor: "rgba(128, 217, 248, 1)",
-          // shadowColor: 'rgba(255, 255, 255, 1)',
-          shadowOffsetX: -2,
-          shadowOffsetY: 2,
-          shadowBlur: 10,
-        },
+        nameMap: world_map_reac.geoNameMap,
         emphasis: {
+          // label: {
+          //   show: false,
+          // },
           itemStyle: {
             areaColor: "#389BB7",
             borderWidth: 0,
@@ -79,8 +70,49 @@ export default {
       },
     });
 
+    const getJson = () => {
+      axios.get("world.json").then((res) => {
+        console.log(res);
+        let zhArr = [],
+          enArr = [];
+        res.data.features.map((item) => {
+          zhArr.push(["name", item.properties.name]);
+          enArr.push(["name", item.properties.name_en]);
+        });
+        world_map_reac.zhData = zhArr;
+        world_map_reac.enData = enArr;
+      });
+    };
+
+    // 中文
+    const handlerZH = () => {
+      world_map_reac.geoNameMap = [];
+      world_map_reac.geoNameMap = lodash.fromPairs(world_map_reac.zhData);
+      console.log(world_map_reac.geoNameMap);
+    };
+
+    // 英文
+    const handlerEN = () => {
+      world_map_reac.geoNameMap = [];
+      world_map_reac.geoNameMap = lodash.fromPairs(world_map_reac.enData);
+       console.log(world_map_reac.geoNameMap);
+    };
+
+    const handlerCountry = (event, instance, echarts) => {
+      console.log(event, instance, echarts);
+    };
+
+    onMounted(() => {
+      getJson();
+    });
+
     return {
+      ...toRefs(world_map_reac),
       option,
+      handlerCountry,
+      handlerZH,
+      handlerEN,
+      getJson,
     };
   },
 };

@@ -298,6 +298,5 @@ export default {
   margin: 0 auto;
   width: 800px;
   height: 800px;
-  border: 1px solid #333;
 }
 </style>
