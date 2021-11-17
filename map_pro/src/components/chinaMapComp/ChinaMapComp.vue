@@ -45,6 +45,9 @@ export default {
           type: "map",
           map: "china",
           zlevel: 2,
+          label: {
+            show: true,
+          },
         },
       ],
     });

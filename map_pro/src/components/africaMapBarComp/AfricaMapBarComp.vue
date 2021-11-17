@@ -39,6 +39,34 @@ var data = [
   { name: "Guinea", value: 9 },
 ];
 
+var data1 = [
+  { name: "South Africa", value: 20 },
+  { name: "Nigeria", value: 14 },
+  { name: "Eswatini", value: 8 },
+  { name: "Sudan", value: 8 },
+  { name: "Somalia", value: 8 },
+  { name: "Mali", value: 7 },
+  { name: "Burkina faso", value: 5 },
+  { name: "Khartoum", value: 4 },
+  { name: "Côte d'Ivoire", value: 4 },
+  { name: "Uganda", value: 4 },
+  { name: "Niger", value: 3 },
+  { name: "Tunisia", value: 3 },
+  { name: "Ethiopia", value: 2 },
+  { name: "Zimbabwe", value: 2 },
+  { name: "S. Sudan", value: 2 },
+  { name: "Senegal", value: 2 },
+  { name: "Atbara", value: 1 },
+  { name: "Angola", value: 1 },
+  { name: "Togolaise", value: 1 },
+  { name: "Congo", value: 1 },
+  { name: "Ghana", value: 1 },
+  { name: "Cameroun", value: 1 },
+  { name: "Malawi", value: 1 },
+  { name: "Mauritania", value: 1 },
+  { name: "Chad", value: 1 },
+];
+
 var yData = [];
 
 data.sort(function (o1, o2) {
