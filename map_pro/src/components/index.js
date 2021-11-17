@@ -7,6 +7,7 @@ import ChinaMapBarComp from "@/components/chinaMapBarComp/index";
 import AfricaMapComp from "@/components/africaMapComp/index";
 import AfricaMapBarComp from "@/components/africaMapBarComp/index";
 import ZJMapComp from "@/components/zjMapComp/index";
+import SwiperComp from "@/components/swiperComp/index";
 
 export default function (Vue) {
     Vue.use(WorldDataComp)
@@ -18,4 +19,5 @@ export default function (Vue) {
     Vue.use(AfricaMapComp)
     Vue.use(AfricaMapBarComp)
     Vue.use(ZJMapComp)
+    Vue.use(SwiperComp)
 }
